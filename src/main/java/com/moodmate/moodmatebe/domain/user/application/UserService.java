@@ -1,7 +1,6 @@
 package com.moodmate.moodmatebe.domain.user.application;
 
 import com.moodmate.moodmatebe.domain.chat.domain.ChatRoom;
-import com.moodmate.moodmatebe.domain.chat.dto.response.ChatUserDto;
 import com.moodmate.moodmatebe.domain.chat.exception.ChatRoomNotFoundException;
 import com.moodmate.moodmatebe.domain.chat.repository.RoomRepository;
 import com.moodmate.moodmatebe.domain.matching.repository.WhoMeetRepository;

@@ -73,8 +73,8 @@ public class WebSecurityConfig {
                 .exceptionHandling((exceptionConfig) -> exceptionConfig.authenticationEntryPoint(jwtAuthenticationEntryPoint)
                         .accessDeniedHandler(jwtAccessDeniedHandler)
                 )
-                .logout((logoutConfig) -> logoutConfig.logoutSuccessUrl("/"))
-                .addFilterBefore(new JwtFilter(jwtProvider), UsernamePasswordAuthenticationFilter.class);
+                .logout((logoutConfig) -> logoutConfig.logoutSuccessUrl("/"));
+               // .addFilterBefore(new JwtFilter(jwtProvider), UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
 }

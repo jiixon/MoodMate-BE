@@ -2,8 +2,7 @@ package com.moodmate.moodmatebe.domain.chat.domain;
 
 import com.moodmate.moodmatebe.domain.chat.dto.request.ChatMessageDto;
 import jakarta.persistence.Id;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
@@ -11,7 +10,10 @@ import java.time.ZoneId;
 
 @Builder
 @Getter
+@Setter
+@AllArgsConstructor
 @Document
+@NoArgsConstructor
 public class Message {
     @Id
     private String id;

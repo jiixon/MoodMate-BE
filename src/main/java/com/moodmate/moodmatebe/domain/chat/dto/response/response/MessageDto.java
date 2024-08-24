@@ -1,8 +1,6 @@
-package com.moodmate.moodmatebe.domain.chat.dto.response;
+package com.moodmate.moodmatebe.domain.chat.dto.response.response;
 
 import com.moodmate.moodmatebe.domain.chat.domain.Message;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 
 import java.time.LocalDateTime;

@@ -3,7 +3,8 @@ package com.moodmate.moodmatebe.domain.chat.api;
 import com.moodmate.moodmatebe.domain.chat.application.ChatRoomService;
 import com.moodmate.moodmatebe.domain.chat.application.ChatService;
 import com.moodmate.moodmatebe.domain.chat.dto.request.ChatMessageDto;
-import com.moodmate.moodmatebe.domain.chat.dto.response.ChatResponseDto;
+import com.moodmate.moodmatebe.domain.chat.dto.response.response.ChatMessageResponseDto;
+import com.moodmate.moodmatebe.domain.chat.dto.response.response.ChatResponseDto;
 import com.moodmate.moodmatebe.global.error.ErrorResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -36,11 +37,9 @@ public class ChatController {
 
     @Operation(summary = "채팅내역 조회", description = "채팅내역을 조회합니다.")
     @GetMapping("/chat")
-    ResponseEntity<ChatResponseDto> getChatMessage(
-            @RequestHeader("Authorization") String authorizationHeader,
-            @RequestParam Long roomId,
-            @RequestParam int size, @RequestParam int page){
-        return ResponseEntity.ok(chatService.getMessage(authorizationHeader, size, page, roomId));
+    ResponseEntity<ChatResponseDto> getMessage(@RequestParam Long roomId,
+                                               @RequestParam int size, @RequestParam int page){
+        return ResponseEntity.ok(chatService.getMessage(roomId, size, page));
     }
 
     @Operation(summary = "채팅 종료", description = "채팅을 종료합니다.")
@@ -54,5 +53,13 @@ public class ChatController {
     ResponseEntity<Void> closeChatRoom(@RequestHeader("Authorization") String authorizationHeader) {
         chatRoomService.exitChatRoom(authorizationHeader);
         return ResponseEntity.ok().build();
+    }
+
+    @Operation(summary = "채팅내역 조회(MYSQL)", description = "채팅내역을 조회합니다.")
+    @GetMapping("/chat/mysql")
+    ResponseEntity<ChatMessageResponseDto> getChatMessage(
+            @RequestParam Long roomId, @RequestParam int size, @RequestParam int page){
+        return ResponseEntity.ok(chatService.getChatMessage(roomId, size, page));
+
     }
 }
