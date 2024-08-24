@@ -1,4 +1,4 @@
-package com.moodmate.moodmatebe.domain.chat.dto.response.response;
+package com.moodmate.moodmatebe.domain.chat.dto.response;
 
 import lombok.Getter;
 import org.springframework.data.domain.Page;

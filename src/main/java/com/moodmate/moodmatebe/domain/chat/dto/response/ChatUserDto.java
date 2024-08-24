@@ -1,4 +1,4 @@
-package com.moodmate.moodmatebe.domain.chat.dto.response.response;
+package com.moodmate.moodmatebe.domain.chat.dto.response;
 
 import com.moodmate.moodmatebe.domain.chat.domain.ChatRoom;
 import com.moodmate.moodmatebe.domain.user.domain.Gender;

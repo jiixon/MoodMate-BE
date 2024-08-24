@@ -1,11 +1,13 @@
 # TODO 추후 kakaologin dev 검증 시 아래 yml 설정 변경할것
+app:
+  baseUrl: http://localhost:8080
 
 spring:
   datasource:
     # local용 임시 db.
-    url: ENC(Ri4KrNG1MNcUb7b+erH4l/838FO6+gx6jkDR9MfiI49DUFxU+kVV+mVac60I7nEXU2ssfNZj00TlI0jHFROhIrPB4JiLVAFJW5hBrU3PLh2datvtes0t99rRh+nMqjwkbG5SqMmNa94=)
-    username: ENC(lTMVOKtY/fZl+Tug5yVIjQ==)
-    password: ENC(V+/5+sksg/OG4KbxeGc84xoWdskdQPR4)
+    url: jdbc:mysql://localhost:3306/mm
+    username: root
+    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
