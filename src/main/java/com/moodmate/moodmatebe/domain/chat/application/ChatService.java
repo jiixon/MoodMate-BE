@@ -10,8 +10,6 @@ import com.moodmate.moodmatebe.domain.chat.redis.RedisPublisher;
 import com.moodmate.moodmatebe.domain.chat.repository.ChatMessageRepository;
 import com.moodmate.moodmatebe.domain.chat.repository.MessageRepository;
 import com.moodmate.moodmatebe.domain.chat.repository.RoomRepository;
-import com.moodmate.moodmatebe.domain.user.application.UserService;
-import com.moodmate.moodmatebe.global.jwt.JwtProvider;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -31,10 +29,8 @@ public class ChatService {
     private final RoomRepository roomRepository;
     private final MessageRepository messageRepository;
     private final ChatMessageRepository chatMessageRepository;
-    private final JwtProvider jwtProvider;
     private final ChatRoomService chatRoomService;
     private final RedisPublisher redisPublisher;
-    private final UserService userService;
 
     public void handleMessage(ChatMessageDto chatMessageDto) {
         Long roomId = getRoomId(chatMessageDto.getUserId());
