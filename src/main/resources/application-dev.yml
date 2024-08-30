@@ -27,8 +27,7 @@ spring:
       host: moodmate-redis
       port: 6379
     mongodb:
-      uri: adfdfddsdf
-#      uri: ENC(4AbP9ywRUmywg1cUVnXMryfihuYd+AJuLA8SAMXU+Biirkcaiu9OJUW3GZVv+MKqkR/tzUWuapDUNfJSvHH6nRf3LE8mtj6PMJdJiGcjSfvFtrdo5xjS+a4xwmfvPgO0I+WNXXWyBe1EuuQLbGqK2IgZFPsMqzs8)
+      uri: ENC(FRn5Q5obFaSjKXybQpsDxznZnIDSMHe8orczOgy2vjTWi+LyU4L7v5zHXzUPnzKu1dmYSkxnLdemlvIA9SzY433bf+MJz/6CT2CMwkbyiA9CZ6f4M9gAPttiu+7LctgUc6SqLkuc+SGJnq+VltYxBYJayTqohc7GHqAYlzD54z2hOv3LIZynYNdnTHNU6tO/Q4X8CD/ywWFgOKytu+pWSQfz07KrmM6X)
 
   security:
     oauth2:
