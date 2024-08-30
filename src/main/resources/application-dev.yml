@@ -1,15 +1,12 @@
-server:
-  port: 8088
-
 app:
   baseUrl: ${baseUrl}
 
 spring:
   datasource:
     # dev용 database
-    url: ENC(NKpZcVuFwcDYDlSTJcoYUmQ8ZycoSuSqmylNCzXChrgcQhLNojaQe/nXCYkByw8BmUcIkdvYV7QML6Hf4Fp+KD1o61RKscwyRi4V+kxhRoDNMTFE15BqA/J+Q+9iDO1JWPSOw6WU7rg=)
-    username: ENC(lTMVOKtY/fZl+Tug5yVIjQ==)
-    password: ENC(V+/5+sksg/OG4KbxeGc84xoWdskdQPR4)
+    url: ENC(L9nth2gVcEX2XOVAFKZ1vozHlJ3O8RHN2f99jHZgY9Wqb4FToPFC7lZ/XClDXEwh7wrCKcKq+XHNP5X8eE68eh0AlGh9ZnwucEgBGjREoJ036THj/XJ/huA0LmSq2rzv)
+    username: ENC(FGU5JTlVX1urXFZ/vfvM/Q==)
+    password: ENC(P985tJ0vpttqZ0Zk9l3ehjv0Q42YguHw)
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     show-sql: true
@@ -30,7 +27,8 @@ spring:
       host: moodmate-redis
       port: 6379
     mongodb:
-      uri: ENC(4AbP9ywRUmywg1cUVnXMryfihuYd+AJuLA8SAMXU+Biirkcaiu9OJUW3GZVv+MKqkR/tzUWuapDUNfJSvHH6nRf3LE8mtj6PMJdJiGcjSfvFtrdo5xjS+a4xwmfvPgO0I+WNXXWyBe1EuuQLbGqK2IgZFPsMqzs8)
+      uri: adfdfddsdf
+#      uri: ENC(4AbP9ywRUmywg1cUVnXMryfihuYd+AJuLA8SAMXU+Biirkcaiu9OJUW3GZVv+MKqkR/tzUWuapDUNfJSvHH6nRf3LE8mtj6PMJdJiGcjSfvFtrdo5xjS+a4xwmfvPgO0I+WNXXWyBe1EuuQLbGqK2IgZFPsMqzs8)
 
   security:
     oauth2:
