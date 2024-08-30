@@ -24,7 +24,7 @@ spring:
       enabled: false
   data:
     redis:
-      host: moodmate-redis
+      host: 127.0.0.1
       port: 6379
     mongodb:
       uri: ENC(5pwyirrHJjZNkfIPqOsBQIDptVCtyy1wL1NxSYv23ejn2526Yl27Kgo7sbNB8DeAgfAHNFm1Sc5oNVVZdCJlGgIA8pv7NEgNFatf/jWu8yd8xNee2Y+Amjr3llxuUY+jHBwzNcgll97vRFNtC36TWpUqRi5X5WuOAU07ntGbgL4ZOWU3l/3jf4frckFeCbOkwn43uMJJkGx5b+qTbzL+tCT2P0oPmtyv)
