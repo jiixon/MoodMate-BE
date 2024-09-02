@@ -56,6 +56,6 @@ logging:
   level:
     root: info
 websocket:
-  allowedOrigins: "https://develop.d1vm6ddjncz2cx.amplifyapp.com"
+  allowedOrigins: "localhost:3000"
 firebase:
   path: ENC(M47HHStR+hGcCyYNQ6hnGJ9IMadcBEmoLtXG+sYnGxs=)
